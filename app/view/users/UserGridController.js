@@ -28,7 +28,7 @@ Ext.define('MyApp.view.users.UserGridController', {
         var record = me.getSelectedRecord();
         if (record) {
             Ext.Ajax.request({
-                url: 'http://localhost:8080/Jotech/api/users/' + record.get('id'),
+                url: baseUrl + 'users/' + record.get('id'),
                 method: 'DELETE',
                 success: function(response, opts) {
                     var obj = Ext.decode(response.responseText);
@@ -53,7 +53,7 @@ Ext.define('MyApp.view.users.UserGridController', {
     getRecordFromServer: function(searchId) {
         if (searchId) {
             Ext.Ajax.request({
-                url: 'http://localhost:8080/Jotech/api/users/' + searchId,
+                url: baseUrl + 'users/' + searchId,
                 method: 'GET',
                 success: function(response, opts) {
                     console.log(response.responseText);

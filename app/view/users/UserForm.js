@@ -1,4 +1,4 @@
-Ext.define('TutorialApp.view.users.UserForm', {
+Ext.define('MyApp.view.users.UserForm', {
     extend: 'Ext.window.Window',
     xtype: 'userform',
     controller: 'userformcontroller',

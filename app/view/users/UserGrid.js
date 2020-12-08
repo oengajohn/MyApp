@@ -1,8 +1,6 @@
 Ext.define('MyApp.view.users.UserGrid', {
     extend: 'Ext.grid.Panel',
-
     xtype: 'usergrid',
-
     controller: 'usergridcontroller',
     store: {
         type: 'users'
@@ -69,8 +67,8 @@ Ext.define('MyApp.view.users.UserGrid', {
         displayMsg: 'Display records {0} - {1} of {2}',
         emptyMsg: 'No Record to display'
     },
-    listeners: {
-        rowclick: 'onRowClick'
-    }
+    // listeners: {
+    //     rowclick: 'onRowClick'
+    // }
 
 });

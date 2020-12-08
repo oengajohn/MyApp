@@ -30,10 +30,11 @@ Ext.define('MyApp.store.MenuTreeStore', {
                 text: 'Post Module',
                 expanded: true,
                 children: [
-                    { text: 'Posts', leaf: true },
+                    { text: 'Posts', leaf: true, className: 'usergrid' },
                     { text: 'others', leaf: true }
                 ]
             },
+
 
         ]
     }
